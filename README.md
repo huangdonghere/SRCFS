@@ -29,7 +29,7 @@ If you need to select D features from the dataset with a data matrix fea, you ca
 selectedFeatureIdx = rankings(1:D);
 ```
 
-Here, selectedFeatureIdx indicates the indices of D selected features. Then you can use these selected features for your specific tasks. For example, if you would like to perform k-means on the dataset with the selected features, you may do it like this:
+Here, selectedFeatureIdx indicates the indices of D selected features. Then you can use these selected features for your specific tasks. For example, if you would like to perform k-means on the dataset with the selected features, you can do it like this:
 
 ```
 newFea = fea(:,selectedFeatureIdx);
