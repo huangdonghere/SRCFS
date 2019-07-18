@@ -2,9 +2,9 @@
 
 ## Description
 
-This project provides the MATLAB code for our SRCFS method, which is an unsupervised feature selection method presented in the following paper:
+This project provides the MATLAB source code for our SRCFS algorithm, which is an unsupervised feature selection algorithm presented in the following paper:
 
-D. Huang, X. Cai, and C.-D. Wang. “Unsupervised Feature Selection with Multi-Subspace Randomization and Collaboration”, under peer review, 2019.
+Dong Huang, Xiaosha Cai, and Chang-Dong Wang. “Unsupervised Feature Selection with Multi-Subspace Randomization and Collaboration”, Knowledge-Based Systems, in press, 2019.
 
 ## Main Function
 
