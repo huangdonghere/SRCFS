@@ -2,9 +2,10 @@
 % This is the code for the SRCFS method, which is proposed in the   %
 % following paper:                                                  %
 %                                                                   %
-% D. Huang, X. Cai, and C.-D. Wang. "Unsupervised Feature Selection % 
-% with Multi-Subspace Randomization and Collaboration", submitted   %
-% to Knowledge-Based Systems, under peer review, 2019.              %
+% Dong Huang, Xiaosha Cai, and Chang-Dong Wang.                     %
+% "Unsupervised Feature Selection with Multi-Subspace Randomization %
+% and Collaboration",                                               %
+% Knowledge-Based Systems, in press, 2019.                          %
 %                                                                   %
 % The code has been tested in Matlab R2016b and Matlab R2018a.      %
 % Written by Huang Dong. (huangdonghere@gmail.com)                  %
@@ -136,6 +137,41 @@ else
 end
 
 function [Y] = LaplacianScore(X, W)
+%	Usage:
+%	[Y] = LaplacianScore(X, W)
+%
+%	X: Rows of vectors of data points
+%	W: The affinity matrix.
+%	Y: Vector of (1-LaplacianScore) for each feature.
+%      The features with larger y are more important.
+%
+%    Examples:
+%
+%       fea = rand(50,70);
+%       options = [];
+%       options.Metric = 'Cosine';
+%       options.NeighborMode = 'KNN';
+%       options.k = 5;
+%       options.WeightMode = 'Cosine';
+%       W = constructW(fea,options);
+%
+%       LaplacianScore = LaplacianScore(fea,W);
+%       [junk, index] = sort(-LaplacianScore);
+%       
+%       newfea = fea(:,index);
+%       %the features in newfea will be sorted based on their importance.
+%
+%	Type "LaplacianScore" for a self-demo.
+%
+% See also constructW
+%
+%Reference:
+%
+%   Xiaofei He, Deng Cai and Partha Niyogi, "Laplacian Score for Feature Selection".
+%   Advances in Neural Information Processing Systems 18 (NIPS 2005),
+%   Vancouver, Canada, 2005.   
+%
+%   Deng Cai, 2004/08
 
 if nargin == 0, selfdemo; return; end
 
