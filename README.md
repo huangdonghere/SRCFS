@@ -2,7 +2,7 @@
 
 ## Description
 
-This project provides the MATLAB source code for our SRCFS algorithm, which is an unsupervised feature selection algorithm presented in the following paper:
+This repository provides the MATLAB source code for our SRCFS algorithm, which is an unsupervised feature selection algorithm presented in the following paper:
 
 ```
 Dong Huang, Xiaosha Cai, and Chang-Dong Wang. “Unsupervised Feature Selection with Multi-Subspace 
