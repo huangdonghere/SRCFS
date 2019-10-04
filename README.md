@@ -4,7 +4,9 @@
 
 This project provides the MATLAB source code for our SRCFS algorithm, which is an unsupervised feature selection algorithm presented in the following paper:
 
-Dong Huang, Xiaosha Cai, and Chang-Dong Wang. “Unsupervised Feature Selection with Multi-Subspace Randomization and Collaboration”, Knowledge-Based Systems, in press, 2019.
+```
+Dong Huang, Xiaosha Cai, and Chang-Dong Wang. “Unsupervised Feature Selection with Multi-Subspace Randomization and Collaboration”, Knowledge-Based Systems, vol.182, pp.104856, 2019.
+```
 
 ## Main Function
 
