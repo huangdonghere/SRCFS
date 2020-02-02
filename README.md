@@ -9,9 +9,9 @@ Dong Huang, Xiaosha Cai, and Chang-Dong Wang. “Unsupervised Feature Selection 
 Randomization and Collaboration”, Knowledge-Based Systems, vol.182, pp.104856, 2019.
 ```
 
-## Main Function
+## Function
 
-The SRCFS.m is the main function, which has four input parameters, namely, fea, para_K, para_s, and para_m. Please note that para_K, para_s, and para_m must be positive integers.
+The function in `SRCFS.m` has four input parameters, namely, fea, para_K, para_s, and para_m. Please note that para_K, para_s, and para_m must be positive integers.
 
 * fea:      the n*d data matrix with each row being a data sample.
 * para_K:   the number of nearest neighobrs.
